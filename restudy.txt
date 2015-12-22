@@ -189,9 +189,9 @@ git remote rm [remote-name] git remotw rename form-name to-name
 继续添加,golobal add content!! add new content 
 继续添加,golobal add content!! add new content 
 add dev content ,add dev content ,add dev content ,
-<<<<<<< HEAD
+
+解决冲突,合并前只需要将指针切换到主干，即master，然后使用merge命令:
 Creating a new branch is quick AND simple.
 Creating a new branch is quick & simple.
-=======
-Creating a new branch is quick AND simple.
->>>>>>> feature1
+
+
