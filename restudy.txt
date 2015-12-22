@@ -1,0 +1,5 @@
+Git is a version control system.
+Git is free software.
+重新开始学习 git, 把丢掉的捡回来
+
+hello  world   现在进行添加测试
