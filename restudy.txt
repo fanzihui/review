@@ -184,3 +184,6 @@ git push [remote-name] [branch-name]
 git remote [remote-name]
 11.6 远程仓库的删除和重命名
 git remote rm [remote-name] git remotw rename form-name to-name
+
+
+继续添加
