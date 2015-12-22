@@ -189,3 +189,4 @@ git remote rm [remote-name] git remotw rename form-name to-name
 继续添加,golobal add content!! add new content 
 继续添加,golobal add content!! add new content 
 add dev content ,add dev content ,add dev content ,
+Creating a new branch is quick AND simple.
