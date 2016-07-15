@@ -1,0 +1,31 @@
+SS Sprite¹
+base64:URL （内联资源，有兼容问题，不会被缓存）²
+SVG Sprite（未来趋势，国外大量网站在使用）
+Icon Font
+对于少量图片压缩，推荐用腾讯智图
+利用CSS3技术绘制简单icon
+Javascript、CSS、HTML等
+合并文件（Node.js工具流Webpark）
+并压缩（Node.js工具流Gulp）
+安排JS/CSS放到合理的部分
+尽量使用CSS3动画代替JS/Flash动画
+避免空标签，避免空src
+避免内联样式
+touchstart，touchend，click分情况使用
+使用<!DOCTYPE html>
+使用UTF-8字符集
+使用引入CSS ，避免使用@import
+尽量使用外链JS和CSS资源
+尽量将脚本放入页面底部
+不要去兼容IE6了，好吗？
+服务端、域名等部署
+服务端启用Gzip技术
+CDN自动合并技术
+利用CDN加速静态资源
+资源分域存放，分域请求（如：img.360buyimg.com存放图片）
+设置合理资源缓存时间
+减少Cookie
+配置Etag文件版本标识，高效利用缓存，避免重复下载
+服务端接口合并
+避免与服务端接口不必要的数据传输
+合理选用GET、POST请求方式³
