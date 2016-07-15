@@ -1,0 +1,11 @@
+checkout branch dev, and dev.txt
+
+这里测试 merge 合并之后，然后 rever回退
+
+具体代码:
+ 
+ git checkout master
+ git merge dev
+ git log
+ git revert adadsfd -m 1
+
