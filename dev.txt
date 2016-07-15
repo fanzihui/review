@@ -1,1 +1,93 @@
-checkout branch dev, and dev.txt
+总结下使用 git 的初步指南
+
+1.首先下载 git 的 客户端
+
+2.然后 使用 gitbash 
+
+3. 设置用户名和 email 地址 
+	git config --global user.name "fanfan"
+	git config --global user.email "1025537699@qq.com"
+
+4.  mkdir fanfan //创建文件夹
+	cd fanfan
+	git init 
+5. 创建 ssh 密匙
+	(1) 检查密匙是否存在
+			ls -al ~/.ssh
+	(2) Generate a new SSH key 创建新的 ssh key 
+		ssh-keygen -t rsa -b 4096 -C "1025537699@qq"
+		
+		Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+		//github 密码
+		Enter passphrase (empty for no passphrase): [Type a passphrase]
+        Enter same passphrase again: [Type passphrase again]
+	(3) Add your key to the ssh-agent
+		ssh-agent -s
+		ssh-add ~/.ssh/id_rsa
+	(4) 在https://github.com 网站上添加 ssh
+	 
+6. git add 
+   git commit -m ""
+   git remote -v
+   git remote add fanfan https://github/fanzihui/....git
+   git fetch fanfan
+   git merge fanfan/master
+   git push -u origin master
+
+
+git 学习:
+   git config --global user.name "fanfan"
+   git config --global user.email "1025537699@qq.com"
+   设置默认颜色
+   git config --global color.ui true
+   git config --global color.status auto
+   git config --global color.branch auto
+   
+   设置默认编辑器
+   git config --global core.editor vim
+   
+   设置默认合并工具
+   git config --global merge.tool vimdiff
+   
+   pwd 显示现在路径
+   
+   git clone 	克隆文件
+   git add		添加文件
+   git init 	初始化仓库
+   git commit	提交
+   git checkout 切换分支
+   git branch 创建分支
+   git branch -a 查看远程分支
+   git branch -d 删除分支
+   git remote  用于管理主机名
+   git remote -v 查看当前所处的分支
+   git remote add origin https://github.com/fanzihui/myrepo.git 远程操控这个仓库
+   git push -u origin master 将本地的仓库提交到你的github账号里
+   git show 显示刚刚添加的内容
+   git status 状态信息
+   git pull 回远程主机某个分支的更新，再与本地的指定分支合并
+   git diff 比较不同
+   git log 日志
+   git grep 搜索
+   git merge  合并
+   git mv 移动
+   git rebase 
+   git reset 重新建立
+   rm 删除
+   git fetch 一旦远程主机的版本库有了更新(Git术语叫做commit)，需要将这些更新取回本地，这时就要用到git fetch命令。
+   
+   git tag 标记TAG，对当前分支打上 tag;
+   git tag -a 'tagName' -m "tagContent" HEAD
+   git push origin tag 'tagName'
+   
+   重命名文件
+   git mv git_study.txt git.txt 
+   git status -s
+   git commit
+   git push origin master
+   
+   删除临时变化
+   git checkout HEAD --fileName
+   
+   添加补丁文件
+   git format-patch -l
