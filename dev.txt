@@ -76,9 +76,25 @@ git 学习:
    rm 删除
    git fetch 一旦远程主机的版本库有了更新(Git术语叫做commit)，需要将这些更新取回本地，这时就要用到git fetch命令。
    
+
+   git branch -av
+   git branch -m devel develop  重命名本地分支
+   git push origin develop 推送本地分支：
+   git push origin --delete <branchName> 删除分支
+   git push origin :<branchName> 推送一个空分支到远程分支，其实就相当于删除远程分支
+
    git tag 标记TAG，对当前分支打上 tag;
    git tag -a 'tagName' -m "tagContent" HEAD
    git push origin tag 'tagName'
+   git push origin --delete tag <tagname> 删除tag
+   git tag -d <tagname> 删除tag
+   git fetch origin tag <tagname>  获取远程tag
+   git push --tags 把本地tag推送到远程
+
+   git fetch -p fetch之后删除掉没有与远程分支对应的本地分支
+
+
+
    
    重命名文件
    git mv git_study.txt git.txt 
