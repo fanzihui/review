@@ -1,0 +1,21 @@
+1.在github pages里创建你项目的Demo
+
+终端里切换到你的工作目录
+创建一个新的gh-pages分支
+
+git checkout --orphan gh-pages
+//新建一个gh-pages分支并且没有任何提交历史，不要--orphan也行
+删除里面的内容（可选，如果里面是你要提交的内容就不用删）
+
+rm -rf *
+//删除当前目录全部内容（可选）
+在这个分支里进行的操作就看你自己啦，是merge其他分支的过来还是重新写代码都可以。之后就可以通过http://(user_name|org_name).github.io/repo_name来访问了
+git add和git commit之后就可以正常push了
+
+git push -u origin gh-pages
+//或者
+git push -u origin HEAD
+
+
+2. 使用这个网站,你进去就知道了
+http://htmlpreview.github.io/
